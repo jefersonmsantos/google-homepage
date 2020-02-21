@@ -46,15 +46,82 @@ body{
     
 }
 
+.buttons:hover{   
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	background-color: #f8f8f8;
+	border: 1px solid #c6c6c6;
+	color: #222;
+
+}
+
 #text-bar{
     background-color: transparent;
     border:transparent;
     height:100%;
 }
+.nav-texts{
+    color:#000;
+    text-decoration:none;
+    font-size:13px;
+
+}
+
+#navbar{
+    display:grid;
+    grid-template-columns:10% 20%;
+    grid-gap:70%;
+    align-items:center;
+    
+    height:2em;
+    
+}
+
+.nav-items{
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    display:flex;
+    align-items: center;
+}
+
+#signin-button{
+    text-decoration:none;
+    background-color:royalblue;
+    border:royalblue solid;
+    border-radius:1px;
+    height:2em;
+    padding:0px 1em 0px 1em;
+    color:white;    
+    font-size:13px;
+    text-align:center;
+    height: 150%;
+    line-height: 150%;
+    white-space: nowrap;
+
+}
+
+#app-icon{
+    max-height:30px;
+
+}
+
 </style>
 
 <nav id="navbar">
+    <div class="nav-items">
+        <a class="nav-texts" href="https://web.archive.org/web/20191130234759/https://about.google/?fg=1&amp;utm_source=google-US&amp;utm_medium=referral&amp;utm_campaign=hp-header" ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://about.google/%3Ffg%3D1%26utm_source%3Dgoogle-US%26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&amp;ved=0ahUKEwjP97vPj5PmAhWRhJ4KHUKtAG8QkNQCCAM">About</a>
+        
+        <a class="nav-texts" href="https://web.archive.org/web/20191130234759/https://store.google.com/US?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=en-US" ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://store.google.com/US%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-US&amp;ved=0ahUKEwjP97vPj5PmAhWRhJ4KHUKtAG8QpMwCCAQ">Store</a>
+    </div>
+    
 
+
+    <div class="nav-items">
+        <a class="nav-texts" data-pid="23" href="https://web.archive.org/web/20191130234759/https://mail.google.com/mail/?tab=wm&amp;ogbl">Gmail</a>
+        <a class="nav-texts" data-pid="2" href="https://web.archive.org/web/20191130234759/https://www.google.com/imghp?hl=en&amp;tab=wi&amp;ogbl">Images</a>
+        
+        <a id="signin-button" href="https://web.archive.org/web/20191130234759/https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=https://www.google.com/" target="_top">Sign in</a>
+    </div>    
 </nav>
 
 <main id="main">
@@ -69,7 +136,7 @@ body{
 
         <div id="buttons">
             <button class="buttons">Google search</button>
-            <button class="buttons">I'm feeliing lucky</button>
+            <button class="buttons">I'm Feeling Lucky</button>
         </div>
 </main>
 
