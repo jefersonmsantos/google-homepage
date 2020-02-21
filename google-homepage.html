@@ -2,18 +2,37 @@
 body{
     height:100%;
     display:grid;
+    
+    padding:0px;
+    margin:0px;
 }
 
 #main{
     display:grid;
     width:100%;
-    margin:auto;
+    margin-top:150px;
+    margin-bottom:200px;
     justify-items:center;
     grid-gap:10px;
 }
 
 #img-logo{
 
+}
+
+footer{
+    background-color:#f2f2f2;
+    border-top:solid #a7a2a2 thin;
+    height:3em;
+    display:grid;
+    grid-template-columns:30% 20%;
+    grid-gap:50%;
+    align-items:center;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    
+    
 }
 
 #search-bar{
@@ -66,6 +85,22 @@ body{
 
 }
 
+.nav-texts:hover{
+    text-decoration:underline;
+}
+
+.footer-texts{
+    color:#000;
+    text-decoration:none;
+    font-size:13px;
+
+}
+
+.footer-texts:hover{
+    text-decoration:underline;
+
+}
+
 #navbar{
     display:grid;
     grid-template-columns:10% 20%;
@@ -82,6 +117,15 @@ body{
     justify-content:space-between;
     display:flex;
     align-items: center;
+}
+
+.footer-items{
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    display:flex;
+    align-items: center;
+
 }
 
 #signin-button{
@@ -141,6 +185,18 @@ body{
 </main>
 
 <footer>
+    
+    <div class="footer-items">
+        <a class="footer-texts" href="https://web.archive.org/web/20191130234759/https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+        <a class="footer-texts" href="https://web.archive.org/url?sa=t&rct=j&source=webhp&url=https://www.google.com/services/%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&ved=0ahUKEwjP97vPj5PmAhWRhJ4KHUKtAG8QktQCCBY">Business</a>
+        <a class="footer-texts" href="https://web.archive.org/web/20191130234759/https://google.com/search/howsearchworks/?fg=1">How Search works</a>
+    </div>
+    
+    <div class="footer-items">  
+        <a class="footer-texts" href="https://web.archive.org/web/20191130234759/https://policies.google.com/privacy?fg=1">Privacy</a>
+        <a class="footer-texts" href="https://web.archive.org/web/20191130234759/https://policies.google.com/terms?fg=1">Terms</a>
+        <a class="footer-texts" href="https://web.archive.org/web/20191130234759/https://www.google.com/preferences?hl=en">Settings</a>
 
+    </div>
 
 </footer>
